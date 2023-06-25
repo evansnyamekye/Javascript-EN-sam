@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --color-bg: #daf688;
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-hover: #abe62c;
+
+  --container-width-lg: 80%;
+
+  --transition: all 400ms ease;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-hover);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-hover);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  border-color: var(--color-bg);
+}
+/* 
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+} */
+
+/* ====== start of Nav-bar ====== */
+.nav__container img {
+  height: 50px;
+}
+
+nav {
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: #ffffff;
+}
+
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav__menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+  color: var(--color-black);
+  font-weight: 400;
+}
+
+.nav__menu a:hover {
+  color: var(--color-hover);
+}
+
+/* ===== start of header ===== */
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: -15rem;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__left p {
+  margin: 1rem 0 2.4rem;
+}
+
+.right__img img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+@media (max-width: 756px) {
+  .nav__menu {
+    display: none;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  .header__container {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 375px;
+  }
+}
