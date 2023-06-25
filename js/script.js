@@ -24,3 +24,23 @@ function arraySum (numArray) {
 }
 arraySum([2,4,39-4]); 
 
+function toUpper (stringArr) {
+  let result  = []; 
+  stringArr.forEach(function (str){
+    result.push(str.toUpperCase()); 
+  }); 
+  console.log(result); 
+}
+toUpper(['maame','jane']);
+
+function arrayDouble (strinArray){
+    let output = []; 
+
+    strinArray.forEach(function (strings){
+        output.push(strings);
+        output.push(strings);
+    });
+    console.log(output);  
+}
+arrayDouble(['man', 'woman']); 
+
